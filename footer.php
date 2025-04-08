@@ -1,8 +1,6 @@
-
 <footer>
-    <p>&copy; <?php echo date('Y'); ?> MyPortfolio. All Rights Reserved.</p>
+  <p>&copy; <?php echo date('Y'); ?> MyPortfolio. All Rights Reserved.</p>
+  <?php wp_footer(); ?>
 </footer>
-
-<?php wp_footer(); ?>
 </body>
 </html>
