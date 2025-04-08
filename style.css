@@ -1,51 +1,79 @@
+
 /*
-Theme Name: MyPortfolio
+Theme Name: My Portfolio Redesign
+Description: A professional and stylish portfolio theme.
 */
 
 body {
-  font-family: 'Helvetica Neue', sans-serif;
-  background-color: #f6f6fa;
   margin: 0;
-  padding: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #333;
+  background-color: #f9f9fb;
 }
 
-header {
-  background: white;
+a {
+  color: #5e4ae3;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.site-header {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  padding: 1rem 0;
+}
+.site-header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 40px;
-  border-bottom: 1px solid #ddd;
 }
-
 .logo a {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
-  color: #6a0dad;
-  text-decoration: none;
+  color: #5e4ae3;
 }
-
-.nav-list {
+.main-nav ul {
   display: flex;
-  gap: 20px;
+  gap: 2rem;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
-
-.nav-list li a {
+.main-nav li a {
+  font-weight: 500;
   color: #333;
-  text-decoration: none;
-  font-weight: bold;
 }
-
-.nav-list li a:hover {
-  color: #6a0dad;
-}
-
-footer {
+.hero {
+  background-color: #f1f0f7;
   text-align: center;
-  padding: 20px;
-  background: #333;
-  color: white;
+  padding: 5rem 1rem;
+}
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.1rem;
+  color: #666;
+}
+.btn-primary {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  background: #5e4ae3;
+  color: #fff;
+  border-radius: 999px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.btn-primary:hover {
+  background: #4834d4;
+}
+
+.site-footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 4rem;
 }
